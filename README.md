@@ -59,5 +59,12 @@ The script also sets the `interruptionLevel` to `"time-sensitive"` automatically
 
 ---
 
-## ✅ Example Notification
+## 💡 Customize It
+
+You can easily change the script to:
+- Pull from different APIs (e.g. weather, stocks, air quality)
+- Format the message differently
+- Send multiple notifications
+
+This project is a **template** for lightweight data automations on iOS.
 
