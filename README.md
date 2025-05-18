@@ -6,7 +6,7 @@ Built using [Scriptable](https://apps.apple.com/app/scriptable/id1405459188) and
 
 ---
 
-## 🚀 What It Does
+## What It Does
 
 - Fetches **real-time data** from 2 different APIs via RapidAPI
 - Formats the data into a clean summary
@@ -16,7 +16,7 @@ Built using [Scriptable](https://apps.apple.com/app/scriptable/id1405459188) and
 
 ---
 
-## ⚙️ Setup Instructions
+## Setup Instructions
 
 ### 1. Get Free API Access
 
@@ -48,7 +48,7 @@ Copy your **API Key**.
 
 ---
 
-## 🔕 Works with Focus / Do Not Disturb
+## Works with Focus / Do Not Disturb
 
 To ensure notifications still show during Focus modes:
 
@@ -59,7 +59,7 @@ The script also sets the `interruptionLevel` to `"time-sensitive"` automatically
 
 ---
 
-## 💡 Customize It
+## Customize It
 
 You can easily change the script to:
 - Pull from different APIs (e.g. weather, stocks, air quality)
