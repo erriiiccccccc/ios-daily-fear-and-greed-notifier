@@ -44,7 +44,7 @@ Copy your **API Key**.
 - Choose **Time of Day** → set a time (e.g. 5:00 PM daily)
 - Add Action → `Run Script` → select the Scriptable script
 - Turn off **Ask Before Running**
-- (Optional) Turn on **Run Immediately**
+- Turn on **Run Immediately**
 
 ---
 
