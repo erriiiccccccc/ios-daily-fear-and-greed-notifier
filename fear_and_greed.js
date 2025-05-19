@@ -8,9 +8,9 @@ let headersCNN = {
   "X-RapidAPI-Host": "fear-and-greed-index.p.rapidapi.com"
 };
 
-let headersCrypto = {
+cryptoReq.headers = {
   "X-RapidAPI-Key": "YOUR_RAPIDAPI_KEY",
-  "X-RapidAPI-Host": "crypto-fear-greed-index2.p.rapidapi.com"
+  "X-RapidAPI-Host": "crypto-fear-greed-index-bitcoin.p.rapidapi.com"
 };
 
 // -- CNN Fear & Greed --
@@ -21,11 +21,9 @@ let cnnScore = cnnData.fgi.now.value;
 let cnnText = cnnData.fgi.now.valueText;
 
 // -- Crypto Fear & Greed --
-let cryptoReq = new Request("https://crypto-fear-greed-index2.p.rapidapi.com/index");
-cryptoReq.headers = headersCrypto;
+let cryptoReq = new Request("https://crypto-fear-greed-index-bitcoin.p.rapidapi.com/fng?limit=1&format=json");
 let cryptoData = await cryptoReq.loadJSON();
-let timestamps = Object.keys(cryptoData).sort((a, b) => b - a);
-let latest = cryptoData[timestamps[0]];
+let latest = cryptoData.data[0];
 let cryptoScore = latest.value;
 let cryptoText = latest.value_classification;
 
