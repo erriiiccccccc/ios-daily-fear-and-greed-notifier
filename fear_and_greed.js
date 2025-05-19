@@ -8,7 +8,7 @@ let headersCNN = {
   "X-RapidAPI-Host": "fear-and-greed-index.p.rapidapi.com"
 };
 
-cryptoReq.headers = {
+let headersCrypto = {
   "X-RapidAPI-Key": "YOUR_RAPIDAPI_KEY",
   "X-RapidAPI-Host": "crypto-fear-greed-index-bitcoin.p.rapidapi.com"
 };
@@ -22,6 +22,7 @@ let cnnText = cnnData.fgi.now.valueText;
 
 // -- Crypto Fear & Greed --
 let cryptoReq = new Request("https://crypto-fear-greed-index-bitcoin.p.rapidapi.com/fng?limit=1&format=json");
+cryptoReq.headers = headersCrypto;
 let cryptoData = await cryptoReq.loadJSON();
 let latest = cryptoData.data[0];
 let cryptoScore = latest.value;
@@ -41,7 +42,7 @@ Crypto Fear & Greed Index: ${cryptoScore} - ${cryptoText}`;
 let notif = new Notification();
 notif.title = "📊 Daily Fear & Greed";
 notif.body = body;
-notif.interruptionLevel = "time-sensitive":
+notif.interruptionLevel = "time-sensitive";
 notif.schedule();
 
 Script.complete();
