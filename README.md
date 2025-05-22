@@ -4,6 +4,9 @@ This is a lightweight iOS automation that sends a daily notification with **any 
 
 Built using [Scriptable](https://apps.apple.com/app/scriptable/id1405459188) and the **Shortcuts** app, it’s fully offline after setup and customizable.
 
+Preview:
+![image](https://github.com/user-attachments/assets/1c422ace-dc82-4115-99c8-d32be06f6a75)
+
 ---
 
 ## What It Does
